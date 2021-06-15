@@ -1,12 +1,13 @@
 export default {
   collectCoverage: true,
-  preset: "ts-jest/presets/default-esm",
-  testURL: "http://localhost/",
-  transform: {},
+  extensionsToTreatAsEsm: [".ts", ".tsx"],
   globals: {
     "ts-jest": {
       useESM: true,
     },
   },
-  extensionsToTreatAsEsm: [".ts"],
+  preset: "ts-jest/presets/default-esm",
+  testEnvironment: "jsdom",
+  testURL: "http://localhost/",
+  transform: {},
 };
