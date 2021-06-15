@@ -19,5 +19,9 @@ Node version: v14.17.0
 1. Run `make install` which runs npm install in all directories
 2. Run `make test` which runs npm run test in all directories
 
-Expected: All projects to run tests successfully
-Actual: All but `end-module` which represents a ES Module project that includes both commonjs and ES modules passes
+- Expected: All projects to run tests successfully
+- Actual: All but `end-module` (which represents a ES Module project that includes both commonjs and ES modules) passes
+
+# Possible blockers
+
+- https://github.com/facebook/jest/issues/11563
