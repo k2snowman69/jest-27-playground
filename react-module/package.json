@@ -43,7 +43,7 @@
     "build:dev": "tsc -p tsconfig.json",
     "clean": "rimraf coverage dist",
     "prepare": "npm run clean && npm run build",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest",
     "version": "changelog-updater && git add ."
   },
   "type": "module",
