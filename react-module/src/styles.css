@@ -1,0 +1,7 @@
+.example-component {
+  margin: 20px;
+
+  &.nested-example {
+    display: none;
+  }
+}

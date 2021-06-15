@@ -1,0 +1,11 @@
+.DS_Store
+.rpt2_cache
+.vscode
+*.log
+*rc.js
+coverage
+src
+jest.config.js
+node_modules
+tsconfig*.json
+rollup*.js

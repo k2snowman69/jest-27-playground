@@ -1,0 +1,40 @@
+{
+  "author": {
+    "email": "TODO_YOUR_EMAIL_HERE@test.example",
+    "name": "TODO your name"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "description": "TODO the description of this project",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "7.14.0",
+    "@types/jest": "26.0.23",
+    "changelog-updater": "2.0.2",
+    "jest": "27.0.4",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.3",
+    "typescript": "4.3.2"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "email": "TODO_YOUR_EMAIL_HERE@test.example",
+      "name": "TODO your name"
+    }
+  ],
+  "module": "dist/index.js",
+  "name": "lib-common-js",
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json",
+    "build:dev": "tsc -p tsconfig.json",
+    "clean": "rimraf coverage dist",
+    "prepare": "npm run clean && npm run build",
+    "test": "jest",
+    "version": "changelog-updater && git add ."
+  },
+  "sideEffects": false,
+  "version": "0.0.0"
+}
